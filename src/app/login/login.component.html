@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+        body{
+
+            background: rgb(219, 226, 226);
+            background-image: url('/assets/myimg/Books6.jpg');
+            background-color: #cccccc;
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .row{
+            background: rgb(186, 140, 99);
+            border-radius: 15px;
+            box-shadow: 12px 12px 22px black;
+            width: 700px;
+            padding-left: 20px;
+        }
+        .btn1{
+
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+
+        }
+        .btn1:hover{
+            background: white;
+            border: 1px solid;
+            color: black;
+        }
+    </style>
+</head>
+
+      
+    
+
+  
+<body> 
+ 
+<section class="Form my-4 mx-5" >
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-7 px-5 pt-5">
+                <h1 class="font-weight-bold py-3">Signin</h1>
+                <h4>and let's get you to the Library!</h4>
+               <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <input type="email" name="email" required ngModel id="floatingInput" placeholder="name@example.com" class="form-control my-3 p-4">
+                                 
+</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <input type="password" required name="password" ngModel id="floatingPassword" placeholder="*****" class="form-control my-3 p-4">
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                         
+                           <button type="submit" class="btn1 mt-3 mb-5">Login</button>
+                        </div>
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
+   Please fill all fields!!
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+       Invalid User or Password!!
+         </div>
+                </form>
+            </div>
+        </div>
+      
+    </div>
+
+</section>
+
+
+</body>
+</html>

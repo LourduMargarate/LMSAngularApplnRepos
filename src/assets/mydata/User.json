@@ -1,0 +1,27 @@
+[
+    {
+
+    "userid": 1,
+    "name": "khush",
+    "gender": "female" ,
+    "email": "khushboorathore@gmail.com",
+    "phno": 8306541622
+    },
+    {
+
+        "userid": 2,
+        "name": "kiran",
+        "gender": "male" ,
+        "email": "kiran@gmail.com",
+        "phno": 7306546622
+        },
+        {
+
+            "userid": 3,
+            "name": "marg",
+            "gender": "female" ,
+            "email": "marg@gmail.com",
+            "phno": 9306541622
+            }
+                
+]

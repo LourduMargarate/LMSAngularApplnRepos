@@ -1,0 +1,21 @@
+[
+    {
+        "bookid": 1,
+        "booktitle": "Kingfisher",
+        "bookauthor": "Neils",
+        "price": 2000
+    },
+    {
+        "bookid": 2,
+        "booktitle": "Happiness",
+        "bookauthor": "Ruskin Bond",
+        "price": 5000
+    },
+    {
+        "bookid": 3,
+        "booktitle": "Ikigai",
+        "bookauthor": "Sudha Murti",
+        "price": 2050
+    }
+
+]

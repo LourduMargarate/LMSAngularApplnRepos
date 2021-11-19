@@ -1,0 +1,38 @@
+<div class="input-group">
+  <input type="search" class="form-control rounded" [(ngModel)]="books.title" placeholder="Search" aria-label="Search"
+  aria-describedby="search-addon" />
+  <button type="button" routerLink="/searchbook/{{books.title}}"   class="btn btn-outline-primary">search</button>
+</div>
+
+<br><br><br>
+
+
+
+      <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Book Id</th>
+                <th scope="col">Book Title</th>
+                <th scope="col">Book Author</th>
+                <th scope="col">Book Category</th>
+                
+                <th scope="col">Publication</th>
+                <th scope="col">Publish Date</th>
+                <th scope="col">Actions</th>
+              </tr>
+        </thead>
+        <tbody>
+          <tr mdbTableCol *ngFor="let bk of books">
+            <th scope="row">{{bk.book_Id}}</th>
+            <td>{{bk.title}}</td>
+            <td>{{bk.author}}</td>
+            <td>{{bk.category}}</td>
+            <td>{{bk.publication}}</td>
+            <td>{{bk.publish_Date}}</td>
+
+            <td> <button (click)="onDelete(bk)"  class="btn btn-danger">Delete</button></td>
+            
+
+          </tr>
+        </tbody>
+      </table>

@@ -1,0 +1,209 @@
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+<style>
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	background: #23242b;
+	color: #fff;
+}
+.u-name {
+	font-size: 20px;
+	padding-left: 17px;
+}
+.u-name b {
+	color: #127b8e;
+}
+.header i {
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+.header i:hover {
+	color: #127b8e;
+}
+.user-p {
+	text-align: center;
+	padding-left: 10px;
+	padding-top: 25px;
+}
+.user-p img {
+	width: 100px;
+	border-radius: 50%;
+}
+.user-p h4 {
+	color: #ccc;
+	padding: 5px 0;
+
+}
+.side-bar {
+	width: 250px;
+	background: #262931;
+	min-height: 100vh;
+	transition: 500ms width;
+}
+.body {
+	display: flex;
+}
+.section-1 {
+	width: 100%;
+	background: url("../assets/myimg/Books6.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.section-1 h1 {
+	color: #fff;
+	font-size: 60px;
+}
+.section-1 p {
+	color: #fff;
+	font-size: 50px;
+
+
+}
+.side-bar ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.side-bar ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms background;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.side-bar ul li:hover {
+	background: #127b8e;
+}
+.side-bar ul li a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.side-bar ul li a i {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 23px;
+}
+#navbtn {
+	display: inline-block;
+	margin-left: 70px;
+	font-size: 20px;
+	transition: 500ms color;
+}
+#checkbox {
+	display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+	width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p{
+	visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span{
+	display: none;
+}
+
+
+</style>
+
+</head>
+<body>
+
+	
+	<div class="body">
+		<nav class="side-bar">
+			<div class="user-p">
+        <input type="checkbox" id="checkbox">
+        
+				<img src="/assets/myimg/kir.JPG">
+				<h4>Admin</h4>
+       
+			</div>
+			<ul>
+        <li>
+					<a routerLink="/createBook" >
+						<i class="fa fa-plus" aria-hidden="true"></i>
+						<span>Add Book</span>
+					</a>
+				</li>
+        <li>
+					<a routerLink="/booklist" >
+						<i class="fa fa-folder-open" aria-hidden="true"></i>
+						<span>Books List</span>
+					</a>
+				</li>
+				<li>
+					<a routerLink="/createuser">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+						
+						<span>Add User</span>
+					</a>
+				</li>
+				<li>
+					<a routerLink="/userlist">
+						<i class="fa fa-folder-open" ></i>
+						<span>User List</span>
+					</a>
+				</li>
+				<li>
+					<a routerLink="/userrecord">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span>User Record</span>
+					</a>
+				</li>
+				<li>
+					<a routerLink="/createissue">
+						<i class="fa fa-book" aria-hidden="true"></i>
+						<span>Issue Book</span>
+					</a>
+				</li>
+				<li>
+					<a routerLink="/returnbook">
+						<i class="fa fa-book" aria-hidden="true"></i>
+						<span>Return Book</span>
+					</a>
+				</li>
+					<li>
+					<a href="#">
+						<i class="fa fa-power-off" aria-hidden="true"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="section-1">
+			<h1 >WELCOME</h1>
+     <p >to</p>
+			<h1 >LibraryManagementSystem</h1>
+
+      
+    
+		</section>
+	</div>
+
+</body>
+</html>
